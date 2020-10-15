@@ -1,5 +1,5 @@
 #page-landing{
-    background: linear-gradient(329.54deg, #0a9fbd 0%, #00C7C7 100%) no-repeat;
+    background: linear-gradient(329.54deg, #0088a3 0%, #00C7C7 100%) no-repeat;
     min-height: 100vh;
     text-align: center;
     display: flex;
@@ -52,7 +52,8 @@ main h1{
 @media (min-width: 760px) {
     #container{
         /*shorthand background: image repeat position / size*/
-        background: url(../images/bg.svg);
+        background: url("../images/bg.svg") no-repeat 80% / clamp(30rem, 54vw, 56rem);
+        padding: 5rem 3rem;
     }
 
     header {
