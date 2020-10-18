@@ -18,7 +18,7 @@ const popup = L.popup({
     className:'map-popup',
     minWidth: 240,
     minHeight: 240
-}).setContent('Casa de Acolhimento Ana Caroline Tenório <a href="orphanage.html?id=1" class="choose-orphanage"> <img src="./public/images/arrow-white.svg"></a>')
+}).setContent('Ana Caroline Tenório <a href="orphanage.html?id=1" class="choose-orphanage"> <img src="./public/images/arrow-white.svg"></a>')
 
 //create and add marker
 L.marker([-7.207001, -48.218559], {icon})
