@@ -3,8 +3,11 @@ const server = express()
 const path = require('path')
 const pages = require('./pages')
 
-server.
-use(express.static('public'))
+server
+// utilizar body do req
+.use(express.urlencoded({extended: true}))
+// utilizando os arquivos estáticos
+.use(express.static('public'))
 
 .set('views', path.join(__dirname, 'views'))
 .set('view engine', 'hbs')
@@ -13,5 +16,6 @@ use(express.static('public'))
 .get('/orphanage', pages.orphanage)
 .get('/orphanages', pages.orphanages)
 .get('/create-orphanage', pages.createOrphanage)
+.post('/save-orphanage', pages.saveOrphanage)
 
 server.listen(5500)

@@ -84,3 +84,14 @@ function toggleSelect(event){
     //verificar se é sim ou não
     
 }
+
+function validate(event){
+    
+    const inputLat = document.querySelector('[name="lat"]')
+    const inputLng = document.querySelector('[name="lng"]')
+
+    if (inputLat.value == "" && inputLng.value == ""){
+        event.preventDefault()
+        alert('Por favor, selecione um ponto no mapa!')
+    }
+}
